@@ -11,9 +11,9 @@ namespace CIS560
     /// </summary>
     public class OrderMenuItem
     {
-        private int orderId { get; }
-        private int menuItemId { get; }
-        private int menuItemQuantity { get; }
+        public int orderId { get; }
+        public int menuItemId { get; }
+        public int menuItemQuantity { get; }
 
         public OrderMenuItem(int orderId, int menuItemId, int menuItemQuantity)
         {

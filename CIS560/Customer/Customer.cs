@@ -11,12 +11,12 @@ namespace CIS560
     /// </summary>
     public class Customer
     {
-        private int customerId { get; }
-        private string firstName { get; }
-        private string lastName { get; }
-        private int primaryAddressId { get; }
-        private string email { get; }
-        private int phoneNumber { get; }
+        public int customerId { get; }
+        public string firstName { get; }
+        public string lastName { get; }
+        public int primaryAddressId { get; }
+        public string email { get; }
+        public int phoneNumber { get; }
 
         public Customer(int customerId, string firstName, string lastName, int primaryAddressId, string email, int phoneNumber)
         {

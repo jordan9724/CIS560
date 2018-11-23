@@ -11,10 +11,10 @@ namespace CIS560
     /// </summary>
     public class MenuItem
     {
-        private int menuItemId { get; }
-        private int restaurantId { get; }
-        private string name { get; }
-        private decimal price { get; }
+        public int menuItemId { get; }
+        public int restaurantId { get; }
+        public string name { get; }
+        public decimal price { get; }
 
         public MenuItem(int menuItemId, int restaurantId, string name, decimal price)
         {

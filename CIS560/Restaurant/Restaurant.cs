@@ -8,9 +8,9 @@ namespace CIS560
 {
     public class Restaurant
     {
-        private int restaurantId { get; }
-        private string name { get; }
-        private int addressId { get; }
+        public int restaurantId { get; }
+        public string name { get; }
+        public int addressId { get; }
 
         public Restaurant(int restaurantId, string name, int addressId)
         {

@@ -11,10 +11,10 @@ namespace CIS560
     /// </summary>
     public class Driver
     {
-        int driverId { get; }
-        string firstName { get; }
-        string lastName { get; }
-        string driversLicenseNumber { get; }
+        public int driverId { get; }
+        public string firstName { get; }
+        public string lastName { get; }
+        public string driversLicenseNumber { get; }
 
         public Driver(int driverId, string firstName, string lastName, string driversLicenseNumber)
         {

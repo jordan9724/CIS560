@@ -11,11 +11,11 @@ namespace CIS560
     /// </summary>
     public class Order
     {
-        private int orderId { get; }
-        private int customerId { get; }
-        private int driverId { get; }
-        private int addressId { get; }
-        private DateTime createdOn { get; }
+        public int orderId { get; }
+        public int customerId { get; }
+        public int driverId { get; }
+        public int addressId { get; }
+        public DateTime createdOn { get; }
 
         public Order(int orderId, int customerId, int driverId, int addressId)
         {

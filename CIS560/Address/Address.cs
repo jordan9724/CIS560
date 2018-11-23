@@ -11,12 +11,12 @@ namespace CIS560
     /// </summary>
     public class Address
     {
-        private int addressId { get; }
-        private string line1 { get; }
-        private string line2 { get; }
-        private string city { get; }
-        private string state { get; }
-        private int zip { get; }
+        public int addressId { get; }
+        public string line1 { get; }
+        public string line2 { get; }
+        public string city { get; }
+        public string state { get; }
+        public int zip { get; }
 
         public Address(int addressId, string line1, string line2, string city, string state, int zip)
         {

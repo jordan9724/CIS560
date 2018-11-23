@@ -63,15 +63,22 @@
     </Compile>
     <Compile Include="MenuItem\IMenuItemRepository.cs" />
     <Compile Include="MenuItem\MenuItem.cs" />
+    <Compile Include="MenuItem\MenuItemRepository.cs" />
     <Compile Include="OrderMenuItem\IOrderMenuItemRepository.cs" />
     <Compile Include="OrderMenuItem\OrderMenuItem.cs" />
+    <Compile Include="OrderMenuItem\OrderMenuItemRepository.cs" />
     <Compile Include="Order\IOrderRepository.cs" />
     <Compile Include="Order\Order.cs" />
+    <Compile Include="Order\OrderRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Restaurant\IRestaurantRepository.cs" />
     <Compile Include="Restaurant\Restaurant.cs" />
+    <Compile Include="Restaurant\RestaurantRepository.cs" />
     <Compile Include="SqlBuilder.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -97,6 +104,16 @@
   <ItemGroup>
     <Content Include="SQL\CreateTables.sql" />
     <Content Include="SQL\Procedures\Address\CreateAddress.sql" />
+    <Content Include="SQL\Procedures\Address\GetAddress.sql" />
+    <Content Include="SQL\Procedures\Address\RetrieveAddresses.sql" />
+    <Content Include="SQL\Procedures\Customer\CreateCustomer.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SQL\Procedures\Driver\" />
+    <Folder Include="SQL\Procedures\MenuItem\" />
+    <Folder Include="SQL\Procedures\OrderMenuItem\" />
+    <Folder Include="SQL\Procedures\Order\" />
+    <Folder Include="SQL\Procedures\Restaurant\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
